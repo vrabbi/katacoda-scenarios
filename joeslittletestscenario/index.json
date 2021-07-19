@@ -11,7 +11,7 @@
       },
       {
         "title": "Step 2",
-        "text": "step2.md"
+        "text": "step2.md",
         "verify": "step2-verify.sh"
       },
       {
