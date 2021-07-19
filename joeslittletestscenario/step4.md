@@ -10,8 +10,7 @@
 [*] kapp-controller
 [ ] kapp-comptroller
 
->>Q2: enter any free text that at least has the word awesome (i think it's
-case-INsensitive)<<
+>>Q2: enter any free text that at least has the word awesome (i think it's case-INsensitive):<<
 =~= awesome
 
 >>Q3: Please rate this scenario on a scale from 1 to 10<<
