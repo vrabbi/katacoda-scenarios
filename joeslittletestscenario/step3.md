@@ -10,12 +10,16 @@ look how much is already running just from the image! We have a whole cluster.
 `kapp deploy -a app1 -f carvel-kapp/examples/simple-app-example/config-1.yml`{{execute}}
 
 Now take another look!
+
 `kapp ls`{{execute}}
 
 `kapp inspect -a app1 --tree`{{execute}}
 
 `kapp logs -f -a app1`{{execute}}
 
+### Interrupting a running process
+
 if you click this kubectl command it should interrupt the logs tail that we left
 running.
+
 `kubectl get all -A`{{execute interrupt}}

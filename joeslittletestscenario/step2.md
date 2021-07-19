@@ -1,9 +1,8 @@
 # Installing Kapp
 ### Code Preformatting
-Let's see how the pre-tag does code formatting.
 Here's the script for installing kapp onto katacoda
 
-<pre>
+<pre><code class="language-bash">
 #!/bin/bash
 
 if test -z "$BASH_VERSION"; then
@@ -24,6 +23,7 @@ install() {
 }
 
 install
+</code>
 </pre>
 
 ### Now install kapp
