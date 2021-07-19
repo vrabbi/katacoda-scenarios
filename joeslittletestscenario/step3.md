@@ -7,7 +7,7 @@ look how much is already running just from the image! We have a whole cluster.
 
 ## But with kapp too, right?
 
-`kapp deploy -a app1 -f examples/simple-app-example/config-1.yml`{{execute}}
+`kapp deploy -a app1 -f carvel-kapp/examples/simple-app-example/config-1.yml`{{execute}}
 
 Now take another look!
 `kapp ls`{{execute}}
