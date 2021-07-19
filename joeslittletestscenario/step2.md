@@ -31,3 +31,5 @@ and here's the curl command to install it right now!
 
 `wget -O- https://carvel.dev/kapp-install-katacoda.sh | bash`{{execute}}
 
+You must have kapp installed to proceed.
+
