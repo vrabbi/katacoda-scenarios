@@ -58,3 +58,29 @@ hello_msg: stranger
 EOF
 ```{{execute}}
 
+## Package Contents
+The first step in creating our package is to create an (imgpkg bundle)[https://carvel.dev/imgpkg/docs/latest/resources/#bundle]
+that contains the package contents: the above configuration (config.yml and values.yml) and a reference to the greeter app image (docker.io/dkalinin/k8s-simple-app@sha256:...).
+
+To start, lets create a directory with the above configuration files:
+```
+mkdir -p package-contents/config/
+mv config.yml package-contents/config/config.yml
+mv values.yml package-contents/config/values.yml
+```{{execute}}
+
+((Package bundle format)[https://carvel.dev/kapp-controller/docs/latest/packaging/#package-bundle-format] describes the purpose of each directory as well as general recommendations.)
+
+Once we have the configuration figured out, let’s use kbld to record which container images are used:
+```
+mkdir -p package-contents/.imgpkg
+kbld -f package-contents/config/ --imgpkg-lock-output package-contents/.imgpkg/images.yml
+```{{execute}}
+
+For more on using kbld to populate the .imgpkg directory with an ImagesLock, and why it is useful, see the (imgpkg docs on the subject)["imgpkg docs on the subject"
+https://carvel.dev/kapp-controller/docs/latest/package-authoring/#:~:text=imgpkg%20docs%20on%20the%20subject].
+
+Once these files have been added, our package contents bundle is ready to be pushed:
+```
+echo "TODO"
+```{{execute}}

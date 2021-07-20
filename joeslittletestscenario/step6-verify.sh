@@ -1,4 +1,4 @@
 #!/bin/bash
 
-stat config.yml && stat values.yml && echo "done"
+stat package-contents/config/config.yml && stat package-contents/config/values.yml && echo "done"
 
