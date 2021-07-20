@@ -20,6 +20,10 @@
         "text": "step3.md"
       },
       {
+        "title": "Step 4: I should maybe put something else here",
+        "text": "step4.md"
+      },
+      {
         "title": "Step 5: Installing kapp-controller",
         "text": "step5.md"
       },
