@@ -43,7 +43,7 @@
     ],
     "assets": {
       "host01": [
-        {"file": "step1-spinner.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+        {"file": "w8s.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     },
     "intro": {
