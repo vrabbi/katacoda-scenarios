@@ -24,13 +24,17 @@
         "text": "step5.md"
       },
       {
-        "title": "Step 6: The Package Author Experience",
+        "title": "Step 6: The Package Author Experience (1)",
         "text": "step6.md",
         "verify": "step6-verify.sh"
       },
       {
-        "title": "Step 7: Take me for a ride in your CR",
+        "title": "Step 7: The Package Author Experience (2)",
         "text": "step7.md"
+      },
+      {
+        "title": "Step 8: The Package Author Experience (3)",
+        "text": "step8.md"
       }
     ],
     "assets": {
