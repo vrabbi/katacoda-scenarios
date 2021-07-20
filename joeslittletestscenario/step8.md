@@ -8,8 +8,7 @@ Currently, our recommended way to make a package repository is via an [imgpkg bu
 
 Lets start by creating the needed directories:
 
-`mkdir -p my-pkg-repo/.imgpkg
-my-pkg-repo/packages/simple-app.corp.com`{{execute}}
+`mkdir -p my-pkg-repo/.imgpkg my-pkg-repo/packages/simple-app.corp.com`{{execute}}
 
 we can copy our CR YAMLs from the previous step in to the proper packages
 subdirectory:
@@ -21,16 +20,14 @@ cp metadata.yml my-pkg-repo/packages/simple-app.corp.com
 
 Next, let’s use kbld to record which package bundles are used:
 
-`kbld -f my-pkg-repo/packages/ --imgpkg-lock-output
-my-pkg-repo/.imgpkg/images.yml`{{execute}}
+`kbld -f my-pkg-repo/packages/ --imgpkg-lock-output my-pkg-repo/.imgpkg/images.yml`{{execute}}
 
 With the bundle metadata files present, we can push our bundle to whatever OCI
 registry we plan to distribute it from, which for this tutorial will just be our
 same localhost. **Note** there is no need for this to be the same registry as in the
 previous step!
 
-`imgpkg push -b localhost:5000/packages/my-pkg-repo:1.0.0 -f
-my-pkg-repo`{{execute}}
+`imgpkg push -b localhost:5000/packages/my-pkg-repo:1.0.0 -f my-pkg-repo`{{execute}}
 
 
 The package repository is pushed!
