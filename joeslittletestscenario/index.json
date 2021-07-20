@@ -6,25 +6,30 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1: basically a waste of time",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2: Installing Carvel",
         "text": "step2.md",
         "verify": "step2-verify.sh"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3: A Wretched Hive of Scum and Villainy",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Step 4: An optional kapp interlude",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Step 5: Installing kapp-controller",
         "text": "step5.md"
+      },
+      {
+        "title": "Step 6: The Package Author Experience",
+        "text": "step6.md",
+        "verify": "step6-verify.sh"
       }
     ],
     "intro": {
