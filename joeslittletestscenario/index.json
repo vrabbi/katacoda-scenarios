@@ -6,7 +6,8 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1: basically a waste of time",
+        "title": "Step 1: Wait for Kubernetes environment to initialize",
+        "code": "step1-spinner.sh",
         "text": "step1.md"
       },
       {

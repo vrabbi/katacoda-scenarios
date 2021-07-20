@@ -1,8 +1,6 @@
-I dunno let's run some basic terminal commands?
+We're waiting for `kubectl get all` to return non-error messages.
 
-`ls`{{execute}}
-`pwd`{{execute}}
+After a few seconds the spinner in the terminal should be replaced by a ready
+message.
 
-`echo "hi mom"`{{execute}}
 
-cool, right? probably.
