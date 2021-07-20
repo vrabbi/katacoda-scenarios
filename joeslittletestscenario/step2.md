@@ -1,35 +1,9 @@
-# Installing Kapp
-### Code Preformatting
-Here's the script for installing kapp onto katacoda
+# Installing kapp-controller dependencies
 
-<pre><code class="language-bash">
-#!/bin/bash
+Install appropriate versions of kapp-controller 0.21.0's
+carvel suite dependencies:
 
-if test -z "$BASH_VERSION"; then
-  echo "Please run this script using bash, not sh or any other shell." >&2
-  exit 1
-fi
+`wget -O- https://raw.githubusercontent.com/vmware-tanzu/carvel-kapp-controller/fc5458fe2102d67e85116c26534a35e265b28125/hack/install-deps.sh`{{execute}}
 
-install() {
-	set -euo pipefail
 
-	# Start Kubernetes on Katacoda
-	launch.sh
-
-	wget -O- https://carvel.dev/install.sh | bash
-
-	git clone https://github.com/vmware-tanzu/carvel-kapp
-	echo "Cloned github.com/vmware-tanzu/carvel-kapp for examples"
-}
-
-install
-</code>
-</pre>
-
-### Now install kapp
-and here's the curl command to install it right now!
-
-`wget -O- https://carvel.dev/kapp-install-katacoda.sh | bash`{{execute}}
-
-You must have kapp installed to proceed.
 

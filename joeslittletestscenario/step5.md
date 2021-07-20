@@ -1,8 +1,8 @@
 # I believe I was promised kapp-controller?
 
-ok, sure!
+Use kapp to install kapp-controller:
 
-`kapp deploy -a kc -f https://github.com/vmware-tanzu/carvel-kapp-controller/releases/latest/download/release.yml`{{execute}}
+`kapp deploy -a kc -f https://github.com/vmware-tanzu/carvel-kapp-controller/releases/download/v0.21.0/release.yml`{{execute}}
 
 gaze upon the splendor!
 

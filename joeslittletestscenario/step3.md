@@ -1,15 +1,18 @@
-## Hey I Thought This Was a Kubernetes Tutorial
-oh yeah cool. 
+# Optional: explore kapp
 
-`kubectl get all -A`{{execute}}
+You can skip this step if you want to get straight to kapp-controller
 
-look how much is already running just from the image! We have a whole cluster.
+### kapp example app
 
-## But with kapp too, right?
+First clone the repo for examples
+
+`git clone https://github.com/vmware-tanzu/carvel-kapp`{{execute}}
+
+then deploy an example app!
 
 `kapp deploy -a app1 -f carvel-kapp/examples/simple-app-example/config-1.yml`{{execute}}
 
-Now take another look!
+Now take a look!
 
 `kapp ls`{{execute}}
 
