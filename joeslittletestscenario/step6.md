@@ -5,7 +5,7 @@ These templates will install a simple greeter app with a templated hello message
 
 Create a config.yml:
 
-`cat > config.yml <<- EOF
+```cat > config.yml <<- EOF
 #@ load("@ytt:data", "data")
 
 #@ def labels():
@@ -42,15 +42,15 @@ spec:
         env:
         - name: HELLO_MSG
           value: #@ data.values.hello_msg
-EOF`{{execute}}
+EOF```{{execute}}
 
 and a values.yml:
 
-`cat > values.yml <<- EOF
+```cat > values.yml <<- EOF
 #@data/values
 ---
 svc_port: 80
 app_port: 80
 hello_msg: stranger
-EOF`{{execute}}
+EOF```{{execute}}
 

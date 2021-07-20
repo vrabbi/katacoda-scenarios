@@ -15,11 +15,11 @@
         "verify": "step2-verify.sh"
       },
       {
-        "title": "Step 3: A Wretched Hive of Scum and Villainy",
+        "title": "Step 3: An optional kapp interlude",
         "text": "step3.md"
       },
       {
-        "title": "Step 4: An optional kapp interlude",
+        "title": "Step 4: A Wretched Hive of Scum and Villainy",
         "text": "step4.md"
       },
       {
