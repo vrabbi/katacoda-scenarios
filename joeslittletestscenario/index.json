@@ -7,7 +7,7 @@
     "steps": [
       {
         "title": "Step 1: Wait for Kubernetes environment to initialize",
-        "code": "step1-spinner.sh",
+        "code": "step1-spinner-wrapper.sh",
         "text": "step1.md"
       },
       {
@@ -37,6 +37,11 @@
         "text": "step7.md"
       }
     ],
+    "assets": {
+      "host01": [
+        {"file": "step1-spinner.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },
