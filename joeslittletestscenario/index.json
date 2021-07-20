@@ -31,6 +31,10 @@
         "title": "Step 6: The Package Author Experience",
         "text": "step6.md",
         "verify": "step6-verify.sh"
+      },
+      {
+        "title": "Step 7: Take me for a ride in your CR",
+        "text": "step7.md"
       }
     ],
     "intro": {
