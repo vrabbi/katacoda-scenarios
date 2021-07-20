@@ -59,7 +59,7 @@ EOF
 ```{{execute}}
 
 ## Package Contents
-The first step in creating our package is to create an (imgpkg bundle)[https://carvel.dev/imgpkg/docs/latest/resources/#bundle]
+The first step in creating our package is to create an [imgpkg bundle](https://carvel.dev/imgpkg/docs/latest/resources/#bundle)
 that contains the package contents: the above configuration (config.yml and values.yml) and a reference to the greeter app image (docker.io/dkalinin/k8s-simple-app@sha256:...).
 
 To start, lets create a directory with the above configuration files:

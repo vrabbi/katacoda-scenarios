@@ -23,7 +23,7 @@ EOF
 ```{{execute}}
 
 Now we need to create a Package CR.
-This CR contains versioned instructions and metadata used to install packaged sofwtare that fits the description provided in the PackageMetadata CR we just saved in `metadata.yml`.
+This CR contains versioned instructions and metadata used to install packaged software that fits the description provided in the PackageMetadata CR we just saved in `metadata.yml`.
 
 ```
 cat > 1.0.0.yml << EOF
