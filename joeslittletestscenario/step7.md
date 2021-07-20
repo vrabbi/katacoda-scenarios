@@ -67,7 +67,7 @@ spec:
     spec:
       fetch:
       - imgpkgBundle:
-          image: registry.corp.com/packages/simple-app:1.0.0
+          image: localhost:5000/packages/simple-app:1.0.0
       template:
       - ytt:
           paths:
