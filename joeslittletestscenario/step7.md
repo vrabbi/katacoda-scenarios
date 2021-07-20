@@ -88,5 +88,6 @@ The other main component of this CR is the template section.
 This section uses an App template to inform kapp-controller of the actions required to install the packaged software, so take a look at the [app-spec](https://carvel.dev/kapp-controller/docs/latest/app-spec/) section to learn more about each of the template sections.
 For this example, we have chosen a basic setup that will fetch the imgpkg bundle we created in the previous section, run the templates stored inside through ytt, apply kbld transformations, and then deploy the resulting manifests with kapp.
 
-There will also be validations run on the Package CR, so ensure that spec.refName and spec.version are not empty and that metadata.name is <spec.refName>.<spec.version>. These validations are done to encourage a naming scheme that keeps package version names unique.
+There will also be validations run on the Package CR, so ensure that spec.refName and spec.version are not empty and that metadata.name is `<spec.refName>.<spec.version>`.
+These validations are done to encourage a naming scheme that keeps package version names unique.
 
