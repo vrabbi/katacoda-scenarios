@@ -94,9 +94,9 @@ normally use a repo host such as dockerhub or harbor we will store the IP
 address in a variable:
 
 ```
-export REPO_HOST="`ifconfig | grep -A1 docker | grep inet | cut -f10 -d' '`"
+export REPO_HOST="`ifconfig | grep -A1 docker | grep inet | cut -f10 -d' '`:5000"
 ```{{execute}}
 
 Now we can publish our bundle to our registry:
 
-`imgpkg push -b ${REPO_HOST}:5000/packages/simple-app:1.0.0 -f package-contents/`{{execute}}
+`imgpkg push -b ${REPO_HOST}/packages/simple-app:1.0.0 -f package-contents/`{{execute}}

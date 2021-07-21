@@ -27,7 +27,7 @@ registry we plan to distribute it from, which for this tutorial will just be our
 same REPO_HOST. **Note** there is no need for this to be the same registry as in the
 previous step!
 
-`imgpkg push -b ${REPO_HOST}:5000/packages/my-pkg-repo:1.0.0 -f my-pkg-repo`{{execute}}
+`imgpkg push -b ${REPO_HOST}/packages/my-pkg-repo:1.0.0 -f my-pkg-repo`{{execute}}
 
 
 The package repository is pushed!

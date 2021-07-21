@@ -14,7 +14,7 @@ metadata:
 spec:
   fetch:
     imgpkgBundle:
-      image: ${REPO_HOST}:5000/packages/my-pkg-repo:1.0.0
+      image: ${REPO_HOST}/packages/my-pkg-repo:1.0.0
 EOF
 ```{{execute}}
 
@@ -23,7 +23,7 @@ EOF
 use-case against an external repository.)
 
 This PackageRepository CR will allow kapp-controller to install any of the
-packages found within the `${REPO_HOST}:5000/packages/my-pkg-repo:1.0.0` imgpkg bundle, which we
+packages found within the `${REPO_HOST}/packages/my-pkg-repo:1.0.0` imgpkg bundle, which we
 stored in our docker OCI registry previously.
 
 We can use kapp to apply it to the cluster:

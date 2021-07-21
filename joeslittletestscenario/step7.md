@@ -67,7 +67,7 @@ spec:
     spec:
       fetch:
       - imgpkgBundle:
-          image: ${REPO_HOST}:5000/packages/simple-app:1.0.0
+          image: ${REPO_HOST}/packages/simple-app:1.0.0
       template:
       - ytt:
           paths:
