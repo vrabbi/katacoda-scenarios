@@ -34,7 +34,7 @@ The package repository is pushed!
 
 You can verify by checking the Docker registry catalog:
 
-`curl -X GET localhost:5000/v2/_catalog`{{execute}}
+`curl ${REPO_HOST}/v2/_catalog`{{execute}}
 
 In the next steps we'll act as the package consumer, showing an example of adding and using a PackageRepository with kapp-controller.
 

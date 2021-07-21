@@ -43,5 +43,5 @@ Now we can publish our bundle to our registry:
 
 You can verify that we pushed something called `packages/simple-app` by checking the Docker registry catalog:
 
-`curl -X GET localhost:5000/v2/_catalog`{{execute}}
+`curl ${REPO_HOST}/v2/_catalog`{{execute}}
 
