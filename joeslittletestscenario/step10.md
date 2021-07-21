@@ -1,11 +1,11 @@
-##Installing a Package
+## Installing a Package
 
 Once we have the packages available for installation (as seen via `kubectl get packages`{{execute}}), 
 we need to let kapp-controller know which package we want to install.
 To do this, we will need to create a PackageInstall CR (and a secret to hold the values used by our package):
 
 ```
-cat > pkginstall.yaml << EOF
+cat > pkginstall.yml << EOF
 ---
 apiVersion: packaging.carvel.dev/v1alpha1
 kind: PackageInstall
