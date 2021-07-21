@@ -1,8 +1,8 @@
 {
-  "title": "Joe's Little Test Scenario",
-  "description": "I am Using this Scenario To Learn About Scenarios, Whats the Scenario",
-  "difficulty": "Beginner",
-  "time": "9 minutes",
+  "title": "Draft Tutorial for kapp-controller Package Management",
+  "description": "When we agree this is done we can copy the contents to a different place",
+  "difficulty": "Advanced Beginner",
+  "time": "9-29 minutes",
   "details": {
     "steps": [
       {
