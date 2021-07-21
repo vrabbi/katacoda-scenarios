@@ -20,25 +20,27 @@
         "text": "step3.md"
       },
       {
-        "title": "Step 4: I should maybe put something else here",
+        "title": "Step 4: Installing kapp-controller",
         "text": "step4.md"
       },
       {
-        "title": "Step 5: Installing kapp-controller",
-        "text": "step5.md"
+        "title": "Step 5: The Package Author Experience (1)",
+        "text": "step5.md",
+        "verify": "step5-verify.sh"
       },
       {
-        "title": "Step 6: The Package Author Experience (1)",
+        "title": "Step 6: The Package Author Experience(2)",
         "text": "step6.md",
         "verify": "step6-verify.sh"
       },
       {
-        "title": "Step 7: The Package Author Experience (2)",
+        "title": "Step 7: The Package Author Experience (3)",
         "text": "step7.md"
       },
       {
-        "title": "Step 8: The Package Author Experience (3)",
-        "text": "step8.md"
+        "title": "Step 8: The Package Author Experience (4)",
+        "text": "step8.md",
+        "verify": "step8-verify.sh"
       },
       {
         "title": "Step 9: The Package Consumer Experience (1)",

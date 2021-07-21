@@ -1,4 +1,2 @@
-#!/bin/bash
-
-stat package-contents/config/config.yml && stat package-contents/config/values.yml && echo "done"
+curl -X GET localhost:5000/v2/_catalog | grep simple-app && echo "done"
 
