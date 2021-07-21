@@ -14,19 +14,16 @@ metadata:
 spec:
   fetch:
     imgpkgBundle:
-      image: localhost:5000/packages/my-pkg-repo:1.0.0
+      image: ${REPO_HOST}:5000/packages/my-pkg-repo:1.0.0
 EOF
-sed "s/localhost/`ifconfig | grep -A1 docker | grep inet | cut -f10 -d' '`/" -i repo.yml
 ```{{execute}}
 
-(Because we're leveraging our localhost docker repo we're doing a little juggling
-to get the IP address of the repo into the yaml so that imgpkg can find it
-running within the cluster, see our
+(See our
 [demo video](https://www.youtube.com/watch?v=PmwkicgEKQE) and [website](https://carvel.dev/kapp-controller/docs/latest/package-consumption/#adding-package-repository) examples for more typical
 use-case against an external repository.)
 
 This PackageRepository CR will allow kapp-controller to install any of the
-packages found within the `localhost:5000/packages/my-pkg-repo:1.0.0` imgpkg bundle, which we
+packages found within the `${REPO_HOST}:5000/packages/my-pkg-repo:1.0.0` imgpkg bundle, which we
 stored in our docker OCI registry previously.
 
 We can use kapp to apply it to the cluster:

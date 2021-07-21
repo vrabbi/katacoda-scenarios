@@ -88,6 +88,15 @@ measures.
 
 `docker run -d -p 5000:5000 --restart=always --name registry registry:2`{{execute}}
 
+From the terminal we can access this registry as `localhost:5000` but within the
+cluster we will need to grab the IP Address. To emphasize that you would
+normally use a repo host such as dockerhub or harbor we will store the IP
+address in a variable:
+
+```
+export REPO_HOST="`ifconfig | grep -A1 docker | grep inet | cut -f10 -d' '`"
+```{{execute}}
+
 Now we can publish our bundle to our registry:
 
-`imgpkg push -b localhost:5000/packages/simple-app:1.0.0 -f package-contents/`{{execute}}
+`imgpkg push -b ${REPO_HOST}:5000/packages/simple-app:1.0.0 -f package-contents/`{{execute}}
