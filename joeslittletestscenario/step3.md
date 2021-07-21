@@ -2,27 +2,29 @@
 
 You can skip this step if you want to get straight to kapp-controller
 
-### kapp example app
+### Using kapp to install a cronjob
 
 First clone the repo for examples
 
 `git clone https://github.com/vmware-tanzu/carvel-kapp`{{execute}}
 
-then deploy an example app!
+then deploy an example job!
 
-`kapp deploy -a app1 -f carvel-kapp/examples/simple-app-example/config-1.yml`{{execute}}
+`kapp deploy -a hellocron -f carvel-kapp/examples/jobs/cron-job.yml -y`{{execute}}
 
 Now take a look!
 
 `kapp ls`{{execute}}
 
-`kapp inspect -a app1 --tree`{{execute}}
+`kapp inspect -a hellocron --tree`{{execute}}
 
-`kapp logs -f -a app1`{{execute}}
+We scheduled our cron job to output a hello message every minute, so if you're
+patient you'll see new messages appended to the logs:
 
-### Interrupting a running process
+`kapp logs -f -a hellocron`{{execute}}
 
-if you click this kubectl command it should interrupt the logs tail that we left
-running.
+When you're done watching the logs you can use control-c (`^C`{{execute ctrl-seq}}) to quit.
 
-`kubectl get all -A`{{execute interrupt}}
+Because this was an optional interlude, we can use kapp to uninstall the cron
+job before proceeding:
+`kapp delete -a hellocron -y`{{execute}}

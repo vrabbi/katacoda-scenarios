@@ -1,6 +1,6 @@
 ## Creating a Package: Templating our config
 
-We will be using ytt templates that describe a simple Kubernetes Deployment and Service.
+We will be using [ytt](https://carvel.dev/ytt/) templates that describe a simple Kubernetes Deployment and Service.
 These templates will install a simple greeter app with a templated hello message.
 
 Create a config.yml:

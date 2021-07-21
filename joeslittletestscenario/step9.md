@@ -1,4 +1,4 @@
-##Adding a PackageRepository
+## Adding a PackageRepository
 
 kapp-controller needs to know which packages are available to install.
 One way to let it know about available packages is by creating a package repository.
@@ -30,7 +30,11 @@ We can use kapp to apply it to the cluster:
 `kapp deploy -a repo -f repo.yml -y`{{execute}}
 
 Check for the success of reconciliation to see the repository become available:
-`kubectl get packagerepository`{{execute}}
+`watch kubectl get packagerepository`{{execute}}
+
+Once the simple-package-repository has a "Reconcile succeeded" description,
+we're ready to continue! You can exit the watch by hitting control-c or
+clicking: `^C`{{execute ctrl-seq}}
 
 Once the deploy has finished, we are able to list the package metadatas to see, at a high level, which packages are now available within our namespace:
 `kubectl get packagemetadatas`{{execute}}
