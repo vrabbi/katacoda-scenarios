@@ -1,8 +1,8 @@
 ## Creating a Package: Structuring our contents
-The first step in creating our package is to create an [imgpkg bundle](https://carvel.dev/imgpkg/docs/latest/resources/#bundle)
-that contains the package contents: the above configuration (config.yml and values.yml) and a reference to the greeter app image (docker.io/dkalinin/k8s-simple-app@sha256:...).
+We'll create an [imgpkg bundle](https://carvel.dev/imgpkg/docs/latest/resources/#bundle)
+that contains the package contents: the configuration (config.yml and values.yml from the previous step) and a reference to the greeter app image (docker.io/dkalinin/k8s-simple-app@sha256:...).
 
-To start, lets create a directory with the above configuration files:
+Let's create a directory with the above configuration files:
 ```
 mkdir -p package-contents/config/
 mv config.yml package-contents/config/config.yml
@@ -29,7 +29,7 @@ measures.
 `docker run -d -p 5000:5000 --restart=always --name registry registry:2`{{execute}}
 
 From the terminal we can access this registry as `localhost:5000` but within the
-cluster we will need to grab the IP Address. To emphasize that you would
+cluster we'll need the IP Address. To emphasize that you would
 normally use a repo host such as dockerhub or harbor we will store the IP
 address in a variable:
 
