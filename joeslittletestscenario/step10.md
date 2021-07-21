@@ -49,7 +49,7 @@ Apply the PackageInstall using kapp:
 After the deploy has finished, kapp-controller will have installed the package in the cluster. We can verify this by checking the pods to see that we have a workload pod running. The output should show a single running pod which is part of simple-app:
 `kubectl get pods`{{execute}}
 
-If we now use kubectl’s port forwarding functionality, we can also see the our customized hello message as been used in the workload:
+Once the pod is ready if use kubectl’s port forwarding we'll see our customized hello message has been used in the workload:
 `kubectl port-forward service/simple-app 3000:80 &`{{execute}}
 
 Now if we make a request against our service, we can see that our `hello_msg`

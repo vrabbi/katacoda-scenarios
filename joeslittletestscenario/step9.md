@@ -32,7 +32,7 @@ We can use kapp to apply it to the cluster:
 Check for the success of reconciliation to see the repository become available:
 `watch kubectl get packagerepository`{{execute}}
 
-Once the simple-package-repository has a "Reconcile succeeded" description,
+Once the simple-package-repository has a "**Reconcile succeeded**" description,
 we're ready to continue! You can exit the watch by hitting control-c or
 clicking: `^C`{{execute ctrl-seq}}
 
