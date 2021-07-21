@@ -1,12 +1,11 @@
 # I believe I was promised kapp-controller?
 
-# explain reconciliation and simplify language
 Use kapp to install kapp-controller (reconciliation may take a moment, which you
 could use to read about [kubernetes controller reconciliation loops](https://kubernetes.io/docs/concepts/architecture/controller/)):
 
 `kapp deploy -a kc -f https://github.com/vmware-tanzu/carvel-kapp-controller/releases/download/v0.21.0/release.yml -y`{{execute}}
 
-gaze upon the splendor!
+Gaze upon the splendor!
 
 `kubectl get all -n kapp-controller`{{execute}}
 

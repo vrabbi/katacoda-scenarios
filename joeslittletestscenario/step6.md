@@ -39,3 +39,9 @@ export REPO_HOST="`ifconfig | grep -A1 docker | grep inet | cut -f10 -d' '`:5000
 Now we can publish our bundle to our registry:
 
 `imgpkg push -b ${REPO_HOST}/packages/simple-app:1.0.0 -f package-contents/`{{execute}}
+
+
+You can verify that we pushed something called `packages/simple-app` by checking the Docker registry catalog:
+
+`curl -X GET localhost:5000/v2/_catalog`{{execute}}
+
