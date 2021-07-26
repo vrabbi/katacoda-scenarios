@@ -31,7 +31,6 @@
       {
         "title": "Step 6: The Package Author Experience(2)",
         "text": "step6.md",
-        "verify": "step6-verify.sh"
       },
       {
         "title": "Step 7: The Package Author Experience (3)",
@@ -40,7 +39,6 @@
       {
         "title": "Step 8: The Package Author Experience (4)",
         "text": "step8.md",
-        "verify": "step8-verify.sh"
       },
       {
         "title": "Step 9: The Package Consumer Experience (1)",
