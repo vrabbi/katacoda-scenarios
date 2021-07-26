@@ -1,0 +1,13 @@
+{
+  "title": "Demo/Test for kapp-controller Course page",
+  "description": "this is just a test",
+  "icon": "fa-katacoda",
+  "courses":
+  [
+    {
+      "course_id": "kapp-controller-package-management",
+      "title": "Package Management with kapp-controller",
+      "description": "You will learn how to author and consume packages"
+    }
+  ]
+}
