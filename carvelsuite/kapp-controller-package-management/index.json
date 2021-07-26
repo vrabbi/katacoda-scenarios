@@ -1,0 +1,72 @@
+{
+  "title": "Draft Tutorial for kapp-controller Package Management",
+  "description": "When we agree this is done we can copy the contents to a different place",
+  "difficulty": "Advanced Beginner",
+  "time": "9-29 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1: Wait for Kubernetes environment to initialize",
+        "code": "step1-spinner-wrapper.sh",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2: Installing Carvel",
+        "text": "step2.md",
+        "verify": "step2-verify.sh"
+      },
+      {
+        "title": "Step 3: An optional kapp interlude",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4: Installing kapp-controller",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5: The Package Author Experience (1)",
+        "text": "step5.md",
+        "verify": "step5-verify.sh"
+      },
+      {
+        "title": "Step 6: The Package Author Experience(2)",
+        "text": "step6.md",
+        "verify": "step6-verify.sh"
+      },
+      {
+        "title": "Step 7: The Package Author Experience (3)",
+        "text": "step7.md"
+      },
+      {
+        "title": "Step 8: The Package Author Experience (4)",
+        "text": "step8.md",
+        "verify": "step8-verify.sh"
+      },
+      {
+        "title": "Step 9: The Package Consumer Experience (1)",
+        "text": "step9.md"
+      },
+      {
+        "title": "Step 10: The Package Consumer Experience (2)",
+        "text": "step10.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "w8s.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    },
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
+}
