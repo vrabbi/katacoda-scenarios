@@ -1,0 +1,12 @@
+{
+  "title": "Carvel Suite",
+  "description": "test/demo for carvel suite course",
+  "courses":
+  [
+    {
+      "course_id": "kapp-controller-package-management",
+      "title": "Package Management with kapp-controller",
+      "description": "You will learn how to author and consume packages"
+    }
+  ]
+}
