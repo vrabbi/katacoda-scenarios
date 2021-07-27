@@ -1,12 +1,12 @@
 {
   "title": "Carvel Suite",
-  "description": "test/demo for carvel suite course",
+  "description": "dont click here",
   "courses":
   [
     {
       "course_id": "kapp-controller-package-management",
-      "title": "Package Management with kapp-controller",
-      "description": "You will learn how to author and consume packages"
+      "title": "ignore this please",
+      "description": "this experiment is not being updated"
     }
   ]
 }
