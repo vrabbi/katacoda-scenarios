@@ -1,5 +1,8 @@
 # Optional: explore kapp
 
+Before we install kapp-controller with [kapp](https://carvel.dev/kapp/), you may be interested in seeing
+a different example.
+
 You can skip this step if you want to get straight to kapp-controller
 
 ### Using kapp to install a cronjob

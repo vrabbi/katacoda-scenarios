@@ -1,8 +1,8 @@
 {
-  "title": "Draft Tutorial for kapp-controller Package Management",
-  "description": "When we agree this is done we can copy the contents to a different place",
-  "difficulty": "Advanced Beginner",
-  "time": "9-29 minutes",
+  "title": "Package Management with Carvel's kapp-controller",
+  "description": "(Draft) When we agree this is done we can copy the contents to a different place",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {
