@@ -5,7 +5,7 @@ could use to read about [kubernetes controller reconciliation loops](https://kub
 
 `kapp deploy -a kc -f https://github.com/vmware-tanzu/carvel-kapp-controller/releases/download/v0.21.0/release.yml -y`{{execute}}
 
-To view the deployment resources created for kapp-controller, run the command below: 
+Gaze upon the splendor! 
 
 `kubectl get all -n kapp-controller`{{execute}}
 
