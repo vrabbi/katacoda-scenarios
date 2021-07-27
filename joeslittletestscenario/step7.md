@@ -2,7 +2,7 @@
 
 To finish creating a package, we need to create two CRs. The first CR is the PackageMetadata CR, which will contain high level information and descriptions about our package.
 
-When creating this CR, the api will validate that the PackageMetadata’s name is a fully qualified name. That is it must have at least three segments separated by `.` and cannot have a trailing `.`.
+When creating this CR, the api will validate that the PackageMetadata’s name is a fully qualified name: It must have at least three segments separated by `.` and cannot have a trailing `.`.
 
 We'll make a conformant `metadata.yml` file:
 
