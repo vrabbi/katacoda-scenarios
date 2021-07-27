@@ -4,7 +4,7 @@ A [package repository bundle](https://carvel.dev/kapp-controller/docs/latest/pac
 is a collection of packages (more specifically a collection of Package and PackageMetadata CRs).
 Currently, our recommended way to make a package repository is via an [imgpkg bundle](https://carvel.dev/imgpkg/docs/latest/resources/#bundle).
 
-[Package Repository bundle format](https://carvel.dev/kapp-controller/docs/latest/packaging/#package-repository-bundle-format) describes purpose of each directory and general recommendations.
+The [PackageRepository bundle format](https://carvel.dev/kapp-controller/docs/latest/packaging/#package-repository-bundle-format) describes purpose of each directory and general recommendations.
 
 Lets start by creating the needed directories:
 
@@ -24,11 +24,9 @@ Next, let’s use kbld to record which package bundles are used:
 
 With the bundle metadata files present, we can push our bundle to whatever OCI
 registry we plan to distribute it from, which for this tutorial will just be our
-same REPO_HOST. **Note** there is no need for this to be the same registry as in the
-previous step!
+same REPO_HOST.
 
 `imgpkg push -b ${REPO_HOST}/packages/my-pkg-repo:1.0.0 -f my-pkg-repo`{{execute}}
-
 
 The package repository is pushed!
 

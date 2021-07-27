@@ -2,14 +2,15 @@
 We'll create an [imgpkg bundle](https://carvel.dev/imgpkg/docs/latest/resources/#bundle)
 that contains the package contents: the configuration (config.yml and values.yml from the previous step) and a reference to the greeter app image (docker.io/dkalinin/k8s-simple-app@sha256:...).
 
+The [package bundle format](https://carvel.dev/kapp-controller/docs/latest/packaging/#package-bundle-format) describes the purpose of each directory 
+used in this section of the tutorial as well as general recommendations.
+
 Let's create a directory with our configuration files:
 ```
 mkdir -p package-contents/config/
 cp config.yml package-contents/config/config.yml
 cp values.yml package-contents/config/values.yml
 ```{{execute}}
-
-([Package bundle format](https://carvel.dev/kapp-controller/docs/latest/packaging/#package-bundle-format) describes the purpose of each directory as well as general recommendations.)
 
 Once we have the configuration figured out, let’s use kbld to record which container images are used:
 ```

@@ -5,7 +5,7 @@ could use to read about [kubernetes controller reconciliation loops](https://kub
 
 `kapp deploy -a kc -f https://github.com/vmware-tanzu/carvel-kapp-controller/releases/download/v0.21.0/release.yml -y`{{execute}}
 
-Gaze upon the splendor!
+Gaze upon the splendor! 
 
 `kubectl get all -n kapp-controller`{{execute}}
 
@@ -13,7 +13,7 @@ The kapp deployment is managing a replicaset which owns a service and a pod. The
 pod is running kapp-controller, which is a kubernetes controller
 running its own reconciliation loop.
 
-Kapp-controller introduces new Custom Resource (CR) types we'll use throughout this
+kapp-controller introduces new Custom Resource (CR) types we'll use throughout this
 tutorial, including PackageRepositories and PackageInstalls.
 
 `kubectl api-resources --api-group packaging.carvel.dev`{{execute}}
