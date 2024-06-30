@@ -36,7 +36,7 @@ normally use a repo host such as dockerhub or harbor we will store the IP
 address in a variable:
 
 ```bash
-export REPO_HOST="`ifconfig | grep -A1 docker | grep inet | cut -f10 -d' '`:5000"
+export REPO_HOST="`ifconfig | grep -A1 enp | grep inet | cut -f10 -d' '`:5000"
 ```{{execute}}
 
 Now we can publish our bundle to our registry:
