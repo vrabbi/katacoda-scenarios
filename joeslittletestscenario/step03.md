@@ -8,7 +8,7 @@ You can skip this step if you want to get straight to kapp-controller.
 First pull down the yaml for this example:
 
 ```bash
-wget https://raw.githubusercontent.com/vmware-tanzu/carvel-kapp/5886f388900ce66e4318220025ca77d16bfaa488/examples/jobs/cron-job.yml
+wget https://raw.githubusercontent.com/carvel-dev/kapp/develop/examples/jobs/cron-job.yml
 ```{{execute}}
 
 Then deploy a CronJob to the Kubernetes cluster in this environment:
